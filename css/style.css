@@ -1,0 +1,120 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #FFF;
+    background-color: #FF9800;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+i {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.jumbotron {
+    height: 100%;
+    margin: 0;
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.jumbotron h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    height: 100%;
+}
+
+.settings {
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.settings .break {
+    float: left;
+    width: 200px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.settings .session {
+    float: right;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+.settings .breaks,
+.settings .sessions {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+
+.clock {
+    width: 280px;
+    height: 280px;
+    border: 5px solid #FFF;
+    margin: 50px auto;
+    border-radius: 50%;
+}
+
+.btn {
+    font-size: 50px;
+    padding: 0;
+    margin: 0 4px;
+}
+
+.settings .btn {
+    font-size: 20px;
+    padding: 0 0 7px 0;
+    margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .clock {
+        width: 350px;
+        height: 350px;
+        margin: 30px auto;
+        position: relative;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        overflow: hidden;
+    }
+    .clock .content {
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -40%);
+        -ms-transform: translate(-50%, -40%);
+        transform: translate(-50%, -40%);
+    }
+    .clock .content .minutes {
+        font-size: 120px;
+        line-height: 1.2;
+    }
+    .clock .content .seconds {
+        font-size: 70px;
+        line-height: 1.2;
+    }
+    .clock .content .activity {
+        line-height: 1.2;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+}

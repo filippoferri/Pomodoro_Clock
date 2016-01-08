@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <h1>Pomodoro Clock</h1>
+
+                    <div class="settings">
+                        <div class="break">
+                            <h5>break length</h5>
+                            <i id="br-minus" class="btn fa fa-minus-circle"></i> <span class="breaks">5</span> <i id="br-plus" class="btn fa fa-plus-circle"></i>
+                        </div>
+                        <div class="session">
+                            <h5>session length</h5>
+                            <i id="ss-minus" class="btn fa fa-minus-circle"></i> <span class="sessions">25</span> <i id="ss-plus" class="btn fa fa-plus-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="clock">
+                        <div class="content">
+                            <div class="time">
+                                <span class="minutes">25</span> <span class="seconds">00</span>
+                            </div>
+                            <div class="activity">Activity</div>
+                        </div>
+                    </div>
+
+                    <i class="btn play fa fa-play-circle"></i>
+                    <i class="btn resume fa fa-play-circle"></i>
+                    <i class="btn pause fa fa-pause-circle"></i>
+                    <i class="btn stop fa fa-stop-circle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
